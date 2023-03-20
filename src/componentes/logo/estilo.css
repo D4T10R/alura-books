@@ -1,0 +1,12 @@
+.campo-logo {
+    display: flex;
+}
+
+.logo-img {
+    margin-right: 10px;
+    width: 80px;
+}
+
+.logo-texto {
+    font-size: 32px;
+}
