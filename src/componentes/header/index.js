@@ -1,16 +1,23 @@
-import './estilo.css';
+import Logo from '../Logo/index';
+import OpcoesHeader from '../OpcoesHeader';
+import IconesHeader from '../IconesHeader';
+import styled from 'styled-components'
 
-import Logo from '../../componentes/logo/index';
-import OpcoesHeader from '../../componentes/opcoesHeader';
-import IconesHeader from '../../componentes/iconesHeader';
+const  HeaderContainer = styled.header`
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+    background: #ffffff;   
+`
+
 
 function Header() {
     return (
-        <header className='app-cabecalho'>
+        <HeaderContainer>
             <Logo></Logo>
             <OpcoesHeader></OpcoesHeader>
             <IconesHeader></IconesHeader>
-        </header>
+        </HeaderContainer>
     )
 }
 
