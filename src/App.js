@@ -1,5 +1,10 @@
 import Header from './componentes/Header/index.js'
 import Pesquisa from './componentes/Pesquisa/index.js'
+import UltimosLivros from './componentes/UltimosLancamentos/index.js'
+import Recomendacao from './componentes/Recomendacao/index.js';
+
+import imagemLivro from './img/livro2.png'
+
 import styled from 'styled-components';
 
 
@@ -15,6 +20,13 @@ function App() {
     <AppContainer>
       <Header />
       <Pesquisa />
+      <UltimosLivros />
+      <Recomendacao 
+        titulo='Veja e aprenda mais'
+        subTitulo='Cangaceiro do JS'
+        descricao='Melhor livrode JS para pessoas avançadas em JS'
+        imagem={imagemLivro}
+      />
     </AppContainer>
   );
 }
